@@ -1,8 +1,21 @@
 server:
   port: 9095
  
-Poc-Service-Teste-1-load-balancer:
+poc-service-teste-1-load-balancer:
   ribbon:
     eureka:
       enabled: false
-    ServerListRefreshInterval: 1000
+    listOfServers: localhost:9092,localhost:9999
+    ServerListRefreshInterval: 15000
+    
+# eureka:
+  # instance:
+    # hostname: localhost
+    # port: 8761
+  # client:
+    # registerWithEureka: true
+    # fetchRegistry: false
+    # serviceUrl:
+      # defaultZone: http://${eureka.instance.hostname}:${eureka.instance.port}/eureka/
+  # server:
+    # wait-time-in-ms-when-sync-empty: 3000
