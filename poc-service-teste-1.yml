@@ -1,5 +1,12 @@
 server:
   port: 9095
+ 
+Poc-Service-Teste-1-load-balancer:
+  ribbon:
+    eureka:
+      enabled: true
+    ServerListRefreshInterval: 1000
+
 eureka:
   instance:
     hostname: localhost
