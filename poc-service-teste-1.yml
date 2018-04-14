@@ -4,7 +4,7 @@ server:
 Poc-Service-Teste-1-load-balancer:
   ribbon:
     eureka:
-      enabled: true
+      enabled: false
     ServerListRefreshInterval: 1000
 
 eureka:
