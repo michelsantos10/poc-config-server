@@ -1,0 +1,8 @@
+server:
+  port: 1300
+hello-world:
+  ribbon:
+    eureka:
+      enabled: false
+    listOfServers: localhost:8090, localhost:8091, localhost:8092
+    ServerListRefreshInterval: 1000
