@@ -4,5 +4,5 @@ services-loadbalancer:
   ribbon:
     eureka:
       enabled: false
-    listOfServers: localhost:8090, localhost:8091, localhost:8092
+    listOfServers: localhost:1301
     ServerListRefreshInterval: 1000
