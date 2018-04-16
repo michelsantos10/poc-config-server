@@ -17,3 +17,6 @@ services-loadbalancer:
       enabled: true
     listOfServers: localhost:1301
     ServerListRefreshInterval: 1000
+    NIWSServerListClassName: com.netflix.niws.loadbalancer.DiscoveryEnabledNIWSServerList
+    ServerListRefreshInterval: 3000
+    DeploymentContextBasedVipAddresses:skeleton-service
