@@ -1,5 +1,6 @@
 server:
   port: 1300
+
 eureka:
   instance:
     hostname: localhost
