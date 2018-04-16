@@ -1,11 +1,5 @@
 server:
   port: 1300
-services-loadbalancer:
-  ribbon:
-    eureka:
-      enabled: false
-    listOfServers: localhost:1301
-    ServerListRefreshInterval: 1000
 eureka:
   instance:
     hostname: localhost
