@@ -14,6 +14,6 @@ eureka:
 services-loadbalancer:
   ribbon:
     eureka:
-      enabled: false
+      enabled: true
     listOfServers: localhost:1301
     ServerListRefreshInterval: 1000
