@@ -1,6 +1,6 @@
 server:
   port: 1300
-hello-world:
+services-loadbalancer:
   ribbon:
     eureka:
       enabled: false
