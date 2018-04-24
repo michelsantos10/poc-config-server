@@ -5,7 +5,7 @@ zuul:
   routes:
     greeting:
       path: /greeting/**
-      serviceId: greeting
+      serviceId: POC-SERVICES
       
 eureka:
   instance:
