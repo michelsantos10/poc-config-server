@@ -6,6 +6,9 @@ zuul:
     greeting:
       path: /greeting/**
       serviceId: POC-SERVICES
+    greeting1:
+      path: /greeting1/**
+      serviceId: greeting
       
 eureka:
   instance:
@@ -13,7 +16,7 @@ eureka:
     port: 8761
   client:
     registerWithEureka: true
-    fetchRegistry: false
+    fetchRegistry: true
     serviceUrl:
       defaultZone: http://192.168.0.107:8761/eureka/
   server:
