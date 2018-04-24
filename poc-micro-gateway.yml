@@ -4,11 +4,11 @@ server:
 zuul:
   routes:
     backend:
-      path: /backend/**
-      url: http://localhost:8080/
+      path: /greeting/**
+      url: http://localhost:1301/
     ribbonbackend:
-      path: /ribbonbackend/**
-      serviceId: BACKEND      
+      path: /ribbongreeting/**
+      serviceId: GREETING
       
 eureka:
   instance:
