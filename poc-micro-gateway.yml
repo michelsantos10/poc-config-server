@@ -4,11 +4,11 @@ server:
 zuul:
   routes:
     greeting:
-      path: /greeting/**
+      path: /teste/**
       serviceId: POC-SERVICES
     greeting1:
-      path: /greeting1/**
-      serviceId: greeting
+      path: /teste1/**
+      serviceId: POC-SERVICES
       
 eureka:
   instance:
@@ -20,4 +20,4 @@ eureka:
     serviceUrl:
       defaultZone: http://192.168.0.107:8761/eureka/
   server:
-    wait-time-in-ms-when-sync-empty: 3000
+    wait-time-in-ms-when-sync-empty: 5
