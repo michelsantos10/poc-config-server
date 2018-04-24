@@ -1,10 +1,20 @@
 server:
   port: 1399
+
 zuul:
   routes:
     greeting:
-       path: /greeting/**
+      path: /greeting/**
       serviceId: greeting
+      
 eureka:
+  instance:
+    hostname: localhost
+    port: 8761
+  client:
+    registerWithEureka: true
+    fetchRegistry: false
     serviceUrl:
       defaultZone: http://192.168.0.107:8761/eureka/
+  server:
+    wait-time-in-ms-when-sync-empty: 3000
