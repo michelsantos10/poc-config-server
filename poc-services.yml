@@ -1,5 +1,6 @@
 server:
   port: 1301
+  additionalPorts: 1302,1303
 
 eureka:
   instance:
