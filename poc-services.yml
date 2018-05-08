@@ -12,3 +12,17 @@ eureka:
       defaultZone: http://192.168.0.107:8761/eureka/
   server:
     wait-time-in-ms-when-sync-empty: 3000
+spring:
+    datasource:
+        driver-class-name: com.mysql.jdbc.Driver
+        password: '123456'
+        platform: mysql
+        url: jdbc:mysql://localhost:3306/employees
+        username: root
+    jpa:
+        database-platform: org.hibernate.dialect.MySQLDialect
+        generate-ddl: false
+        hibernate:
+            ddl-auto: none
+        show-sql: true
+        
